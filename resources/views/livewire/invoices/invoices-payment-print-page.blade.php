@@ -2,15 +2,7 @@
     <div class="container bg-white" dir="rtl">
         <div class="row">
             <div class="col-md-12 p-2 text-center">
-                @if($settings->header)
-                    <img src="{{asset($settings->header)}}" width="100%" height="100px" alt="">
-                @else
-                    @if($settings->logo)
-                        <img src="{{asset($settings->logo)}}" width="80" height="80" alt="">
-                    @else
-                        <img src="{{asset('images/logo.png')}}" width="80" height="80" alt="">
-                    @endif
-                @endif
+                <x-invoice-header/>
                 <br>
                 <br>
                 <h3 class="text-center">{{__('public.receiptVoucherPrint')}}</h3>
@@ -108,15 +100,7 @@
                     <p>{{__('public.signature')}}</p>
                     <span>-------------------------------</span>
                 </div>
-                <div class="text-center">
-                    <p>{{__('public.stamp')}}</p>
-                    @if($settings->stamp)
-                        <img src="{{asset($settings->stamp)}}" width="100%" height="100px" alt="">
-                    @else
-                        <img src="{{asset('images/stamp.png')}}" width="100%" height="100px" alt="">
-                    @endif
-
-                </div>
+                <x-invoice-footer/>
             </div>
             <div class="col-md-12">
                 <div class="float-right m-1">

@@ -8,17 +8,7 @@
             </div>
             <div class="card-body">
                 <div class="row">
-                    <div class="col-md-12 text-center mb-2">
-                        @if($settings->header)
-                            <img src="{{asset($settings->header)}}" width="100%" height="100px" alt="">
-                        @else
-                            @if($settings->logo)
-                                <img src="{{asset($settings->logo)}}" width="80" height="80" alt="">
-                            @else
-                                <img src="{{asset('images/logo.png')}}" width="80" height="80" alt="">
-                            @endif
-                        @endif
-                    </div>
+                    <x-invoice-header/>
                     <div class="col-md-12">
                         @if(isset($invoiceView))
                             @livewire('invoices.car-info-page', ['car' => $invoiceView->car])
@@ -161,15 +151,7 @@
                             <p>{{__('public.signature')}}</p>
                             <span>-------------------------------</span>
                         </div>
-                        <div class="text-center">
-                            <p>{{__('public.stamp')}}</p>
-                            @if($settings->stamp)
-                                <img src="{{asset($settings->stamp)}}" width="100%" height="100px" alt="">
-                            @else
-                                <img src="{{asset('images/stamp.png')}}" width="100%" height="100px" alt="">
-                            @endif
-
-                        </div>
+                        <x-invoice-footer/>
                     </div>
                 </div>
             </div>
