@@ -90,6 +90,8 @@
                             <p>{{__('public.stamp')}}</p>
                             @if($settings->stamp)
                                 <img src="{{asset($settings->stamp)}}" width="100%" height="100px" alt="">
+                            @else
+                                <img src="{{asset('images/stamp.png')}}" width="100%" height="100px" alt="">
                             @endif
 
                         </div>
