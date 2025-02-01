@@ -2,15 +2,7 @@
     <div class="container bg-white" dir="rtl">
         <div class="row">
             <div class="col-md-12 p-2 text-center">
-                @if($settings->header)
-                    <img src="{{asset($settings->header)}}" width="100%" height="100px" alt="">
-                @else
-                    @if($settings->logo)
-                        <img src="{{asset($settings->logo)}}" width="80" height="80" alt="">
-                    @else
-                        <img src="{{asset('images/logo.png')}}" width="80" height="80" alt="">
-                    @endif
-                @endif
+                <img src="{{asset('images/logo.png')}}" width="80" height="80" alt="">
                 <br>
                 <br>
                 <h4 class="text-center">
