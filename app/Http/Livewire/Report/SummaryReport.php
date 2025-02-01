@@ -120,19 +120,25 @@ class SummaryReport extends Component
 
     //get total expenses for current month
     private function getSumOfExpenses()
-    {
-        //get monthly expenses sum
-        $monthlyExpenses = Expense::query()
-            ->where('monthly', true)
-            ->sum('amount_tax');
+{
+    // Get the current month and year
+    $currentMonth = Carbon::now()->month;
+    $currentYear = Carbon::now()->year;
 
-        //get non monthly expenses sum
-        $nonMonthlyExpenses = Expense::query()
-            ->whereMonth('date', Carbon::now()->month)
-            ->where('monthly', false)
-            ->sum('amount_tax');
-        return $monthlyExpenses + $nonMonthlyExpenses;
-    }
+    // Get monthly expenses sum
+    $monthlyExpenses = Expense::query()
+        ->where('monthly', true)
+        ->sum('amount_tax');
+
+    // Get non-monthly expenses sum for the current month and year
+    $nonMonthlyExpenses = Expense::query()
+        ->whereMonth('date', $currentMonth)
+        ->whereYear('date', $currentYear) // Ensuring the same year
+        ->where('monthly', false)
+        ->sum('amount_tax');
+
+    return $monthlyExpenses + $nonMonthlyExpenses;
+}
 
     //get total allowances for current month
     private function getSumOfAllowances()
