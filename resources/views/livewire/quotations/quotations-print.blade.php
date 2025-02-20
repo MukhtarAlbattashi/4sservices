@@ -1,32 +1,19 @@
 <div>
     <div class="container-fluid bg-white" dir="rtl">
         <div class="row justify-content-between">
-            <div class="col-md-2 col-sm-6 p-1">
+            <div class="col-md-12 col-sm-12 p-1">
                 <h6>
-                    لمحة للتجارة
+                    لمحة للتجارة - Glance Trading
                 </h6>
                 <h6>
-                    س.ت 1021863
+                    س.ت 1021863 - C.R NO 1021863
                 </h6>
                 <h6>
-                    ولاية ينقل - سلطنة عمان
+                    ولاية ينقل - سلطنة عمان - Wilayat Yanqul - S. of Oman
                 </h6>
                 <h6>
-                    رقم الهاتف: 92040411
-                </h6>
-            </div>
-            <div class="col-md-2 col-sm-6 p-1 text-end">
-                <h6>
-                    Glance Trading
-                </h6>
-                <h6>
-                    C.R NO 1021863
-                </h6>
-                <h6>
-                    Wilayat Yanqul - S. of Oman
-                </h6>
-                <h6>
-                    Phone Number: 92040411
+                    رقم الهاتف: 92040411 - Phone Number: 92040411
+
                 </h6>
             </div>
         </div>
