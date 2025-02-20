@@ -2,6 +2,7 @@
 
 
 return [
+    'print' => 'Print',
     'title' => 'Title',
     'language' => 'Language',
     'dashboard' => 'Dashboard',

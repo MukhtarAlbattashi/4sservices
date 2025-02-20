@@ -1,13 +1,41 @@
 <div>
     <div class="container bg-white" dir="rtl">
         <div class="row">
-            <div class="col-md-12 p-2 text-center">
+            <div class="col-md-4 p-2">
+                <h6>
+                    لمحة للتجارة
+                </h6>
+                <h6>
+                    س.ت 1021863
+                </h6>
+                <h6>
+                    ولاية ينقل - سلطنة عمان
+                </h6>
+                <h6>
+                    رقم الهاتف: 92040411
+                </h6>
+            </div>
+            <div class="col-md-4 p-2 text-center">
                 <img src="{{asset('images/logo.png')}}" width="80" height="80" alt="">
                 <br>
                 <br>
                 <h4 class="text-center">
                     {{__('public.quotations')}} {{$quotationView->id}}
                 </h4>
+            </div>
+            <div class="col-md-4 p-2 text-end">
+                <h6>
+                    Glance Trading
+                </h6>
+                <h6>
+                    C.R NO 1021863
+                </h6>
+                <h6>
+                    Wilayat Yanqul - Sultanate of Oman
+                </h6>
+                <h6>
+                    Phone Number: 92040411
+                </h6>
             </div>
             <div class="col-md-12">
                 @if(isset($quotationView))
