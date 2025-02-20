@@ -6,14 +6,13 @@
                     لمحة للتجارة - Glance Trading
                 </h6>
                 <h6>
-                    س.ت 1021863 - C.R NO 1021863
+                    س.ت 1021863 - C.R NO
                 </h6>
                 <h6>
                     ولاية ينقل - سلطنة عمان - Wilayat Yanqul - S. of Oman
                 </h6>
                 <h6>
-                    رقم الهاتف: 92040411 - Phone Number: 92040411
-
+                    رقم الهاتف: 92040411 - Phone Number
                 </h6>
             </div>
         </div>
