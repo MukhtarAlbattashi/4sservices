@@ -1,7 +1,7 @@
 <div>
-    <div class="container bg-white" dir="rtl">
-        <div class="row">
-            <div class="col-md-4 p-2">
+    <div class="container-fluid bg-white" dir="rtl">
+        <div class="row justify-content-between">
+            <div class="col-md-2 col-sm-6 p-1">
                 <h6>
                     لمحة للتجارة
                 </h6>
@@ -15,15 +15,7 @@
                     رقم الهاتف: 92040411
                 </h6>
             </div>
-            <div class="col-md-4 p-2 text-center">
-                <img src="{{asset('images/logo.png')}}" width="80" height="80" alt="">
-                <br>
-                <br>
-                <h4 class="text-center">
-                    {{__('public.quotations')}} {{$quotationView->id}}
-                </h4>
-            </div>
-            <div class="col-md-4 p-2 text-end">
+            <div class="col-md-2 col-sm-6 p-1 text-end">
                 <h6>
                     Glance Trading
                 </h6>
@@ -31,11 +23,21 @@
                     C.R NO 1021863
                 </h6>
                 <h6>
-                    Wilayat Yanqul - Sultanate of Oman
+                    Wilayat Yanqul - S. of Oman
                 </h6>
                 <h6>
                     Phone Number: 92040411
                 </h6>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 p-2 text-center">
+                <img src="{{asset('images/logo.png')}}" width="80" height="80" alt="">
+                <br>
+                <br>
+                <h4 class="text-center">
+                    {{__('public.quotations')}} {{$quotationView->id}}
+                </h4>
             </div>
             <div class="col-md-12">
                 @if(isset($quotationView))
