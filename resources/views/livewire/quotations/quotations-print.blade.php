@@ -2,29 +2,10 @@
     <div class="container-fluid bg-white" dir="rtl">
         <div class="row justify-content-between">
             <div class="col-md-12 col-sm-12 p-1">
-                <h6>
-                    لمحة للتجارة - Glance Trading
-                </h6>
-                <h6>
-                    س.ت 1021863 - C.R NO
-                </h6>
-                <h6>
-                    ولاية ينقل - سلطنة عمان - Wilayat Yanqul - S. of Oman
-                </h6>
-                <h6>
-                    رقم الهاتف: 92040411 - Phone Number
-                </h6>
+                <img src="{{asset("images/banner.png")}}" alt="banner" width="100%">
             </div>
         </div>
         <div class="row">
-            <div class="col-md-12 p-2 text-center">
-                <img src="{{asset('images/logo.png')}}" width="80" height="80" alt="">
-                <br>
-                <br>
-                <h4 class="text-center">
-                    {{__('public.quotations')}} {{$quotationView->id}}
-                </h4>
-            </div>
             <div class="col-md-12">
                 @if(isset($quotationView))
                 @livewire('invoices.car-info-page', ['car' => $quotationView->car])

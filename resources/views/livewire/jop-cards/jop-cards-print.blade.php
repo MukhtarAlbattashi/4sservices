@@ -2,17 +2,7 @@
     <div class="container bg-white">
         <div class="row">
             <div class="col-md-12 text-center">
-                @if($settings->header)
-                    <img src="{{asset($settings->header)}}" width="100%" height="100px" alt="">
-                @else
-                    @if($settings->logo)
-                        <img src="{{asset($settings->logo)}}" width="80" height="80" alt="">
-                    @else
-                        <img src="{{asset('images/logo.png')}}" width="80" height="80" alt="">
-                    @endif
-                @endif
-                <br>
-                <br>
+                <img src="{{asset("images/banner.png")}}" alt="banner" width="100%">
                 <h3 class="text-center">{{$job->id}}</h3>
             </div>
             <h3 class="text-danger">{{__('public.customerCarData')}}</h3>
