@@ -31,14 +31,14 @@
         <thead class=" text-center text-danger align-middle">
             <td>{{__('public.manufacturingYear')}} - {{__('public.manufacturingYear',[],'en')}}</td>
             <td>{{__('public.chassisNo')}} - {{__('public.chassisNo',[],'en')}}</td>
-            <td></td>
+            <td>{{__('public.taxnoCustomer')}} - {{__('public.taxnoCustomer',[],'en')}}</td>
             <td></td>
             <td></td>
         </thead>
         <tr>
             <td>{{$car->year}}</td>
             <td class="text-uppercase">{{$car->chassis}}</td>
-            <td></td>
+            <td>{{$car->customer->tax_no}}</td>
             <td></td>
             <td></td>
         </tr>

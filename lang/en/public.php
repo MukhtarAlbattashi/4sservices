@@ -76,6 +76,7 @@ return [
     'customerName' => 'Customer Name',
     'customerPhone' => 'Phone Number',
     'taxno' => 'Tax Number',
+    'taxnoCustomer' => 'Tax Number Customer',
     'customerEmail' => 'Email',
     'customerAddress' => 'Address',
     'customerNationality' => 'Nationality',

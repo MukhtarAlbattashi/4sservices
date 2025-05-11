@@ -190,8 +190,8 @@ class EditInvoicesPage extends Component
         $this->calcTotalPrice();
         $this->calcTotalPriceService();
         $this->subTotal = $this->totalPricePart + $this->totalPriceService;
-        $beforetax = floatval((($this->totalPricePart + $this->totalPriceService) * $this->tax) / 100);
-        $this->total = ($beforetax + floatval($this->totalPricePart + $this->totalPriceService)) - floatval($this->discount);
+        $beforeTax = floatval((($this->totalPricePart + $this->totalPriceService - floatval($this->discount)) * $this->tax) / 100);
+        $this->total = ($beforeTax + floatval($this->totalPricePart + $this->totalPriceService)) - floatval($this->discount);
     }
 
     public function updatedTax()

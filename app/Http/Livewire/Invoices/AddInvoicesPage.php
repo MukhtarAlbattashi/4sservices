@@ -178,7 +178,7 @@ class AddInvoicesPage extends Component
         $this->calcTotalPrice();
         $this->calcTotalPriceService();
         $this->subTotal = $this->totalPricePart + $this->totalPriceService;
-        $beforeTax = floatval((($this->totalPricePart + $this->totalPriceService) * $this->tax) / 100);
+        $beforeTax = floatval((($this->totalPricePart + $this->totalPriceService - floatval($this->discount)) * $this->tax) / 100);
         $this->total = ($beforeTax + floatval($this->totalPricePart + $this->totalPriceService)) - floatval($this->discount);
     }
 

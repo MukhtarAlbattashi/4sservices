@@ -75,6 +75,7 @@ return [
     'customerName' => 'اسم العميل',
     'customerPhone' => 'رقم الهاتف',
     'taxno' => 'الرقم الضريبي',
+    'taxnoCustomer' => 'الرقم الضريبي للعميل',
     'customerEmail' => 'البريد الالكتروني',
     'customerAddress' => 'العنوان',
     'customerNationality' => 'الجنسية',
